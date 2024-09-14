@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\wpf\\caro_online\\caro_online\\caro_online\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\wpf\\caro_online\\caro_online\\caro_online\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\wpf\\caro_online\\caro_online\\caro_online\\caro_online.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\caro_online.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Caro_Online",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
+              "RelativeDocumentMoniker": "Caro_Online\\Caro_Online.csproj",
+              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
+              "RelativeToolTip": "Caro_Online\\Caro_Online.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-14T09:35:44.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "D:\\Code\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "D:\\Code\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAKgUAAAAAAAAAAAvwNgUAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-09-14T04:10:53.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Caro_Online\\MainWindow.xaml",
+              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\MainWindow.xaml",
+              "RelativeToolTip": "Caro_Online\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-09T01:54:32.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Caro_Online\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Caro_Online\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAswIQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T03:24:07.324Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

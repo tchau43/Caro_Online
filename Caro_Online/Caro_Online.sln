@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caro_Online", "Caro_Online\Caro_Online.csproj", "{994AF416-59BC-49A3-9ABD-19432C87BFA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{994AF416-59BC-49A3-9ABD-19432C87BFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{994AF416-59BC-49A3-9ABD-19432C87BFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{994AF416-59BC-49A3-9ABD-19432C87BFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{994AF416-59BC-49A3-9ABD-19432C87BFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50330473-948C-4F23-8A1D-D6F53240F080}
+	EndGlobalSection
+EndGlobal
