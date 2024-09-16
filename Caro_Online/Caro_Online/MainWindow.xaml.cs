@@ -1,17 +1,12 @@
-﻿using Microsoft.AspNetCore.SignalR.Client;
+﻿using Caro_Online.Helper;
+using Microsoft.AspNetCore.SignalR.Client;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Caro_Online
 {
@@ -29,6 +24,8 @@ namespace Caro_Online
                 handler(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        private static readonly HttpClient client = new HttpClient();
+
         private bool isGameReset;
         ObservableCollection<OptionDetail> _Maps;
         public ObservableCollection<OptionDetail> Maps
@@ -36,7 +33,6 @@ namespace Caro_Online
             get { return _Maps; }
             set { _Maps = value; OnPropertyChanged(); }
         }
-        public ObservableCollection<OptionDetail>[,] Map2DArr;
 
         string _StatusMessage;
         public string StatusMessage
@@ -51,7 +47,6 @@ namespace Caro_Online
             get { return _NotiStatusMessage; }
             set { _NotiStatusMessage = value; OnPropertyChanged(); }
         }
-
 
         string _RoomMessage;
         public string RoomMessage
@@ -68,11 +63,13 @@ namespace Caro_Online
 
         EStatus currentTurn;
         HubConnection connection;
+        string connectionId;
+        int roomId;
 
         async Task ConnectToSignalR()
         {
             connection = new HubConnectionBuilder()
-                .WithUrl("http://localhost:5133/chathub") // Your server URL
+                .WithUrl(MySetting.API_URL + "/chathub") // Your server URL
                 .Build();
 
             // Handle incoming messages
@@ -82,15 +79,20 @@ namespace Caro_Online
                 MakeAMove(Maps[pos]);
             });
 
-            connection.On<string>("UserJoined", (connectionId) =>
-            {
-                RoomMessage = "Participant: " + connectionId;
-            });
-
             connection.On<string>("RoomFull", (message) =>
             {
                 RoomMessage = message;
             });
+
+            connection.On<string, int>("UserJoined", (connectionId, roomId) =>
+            {
+                RoomMessage = "Participant: " + connectionId;
+            });
+
+            //connection.On<string>("CheckWin", (x) =>
+            //{
+                
+            //});
 
             connection.On<EStatus>("NotiStatus", (message) =>
             {
@@ -103,15 +105,71 @@ namespace Caro_Online
                 UpdateStatus();
             });
 
+            connection.On<string>("ReceiveConnectionId", (id) =>
+            {
+                connectionId = id;  // Store the ConnectionId
+                RoomMessage = $"Your Connection ID is: {connectionId}";
+            });
+
+            connection.On<string>("ResetGame", (message) =>
+            {
+                //MessageBox.Show(message);  // Notify the user that the game has been reset
+                FirstLoad();  // Reset the game map on the client side
+            });
+
             await connection.StartAsync();
-            await connection.SendAsync("JoinChat");
+            await connection.SendAsync("ReceiveConnectionId");
         }
+
+        #region call API
+        public async Task JoinRoomViaApi()
+        {
+            try
+            {
+                var content = new StringContent($"\"{connectionId}\"", Encoding.UTF8, "application/json");  // Pass the stored ConnectionId
+
+                // Call the API to join the room
+                var response = await client.PostAsync(MySetting.API_URL + $"/api/rooms/join/{roomId}", content);
+
+                response.EnsureSuccessStatusCode();  // Ensure the request was successful
+
+                var responseBody = await response.Content.ReadAsStringAsync();
+                RoomMessage = responseBody;  // Update UI or handle response
+                FirstLoad();
+            }
+            catch (HttpRequestException e)
+            {
+                RoomMessage = $"Error joining room: {e.Message}";
+            }
+        }
+
+        // Method to call the CreateRooms API
+        public async Task CreateRoomsFromApi(int roomCapacity = 10)
+        {
+            try
+            {
+                // Replace with your actual API endpoint
+                var response = await client.GetAsync(MySetting.API_URL + $"/api/Rooms/create?roomCapacity={roomCapacity}");
+
+                response.EnsureSuccessStatusCode();  // Ensure the request was successful
+
+                var responseBody = await response.Content.ReadAsStringAsync();
+                //MessageBox.Show(responseBody);  // Update UI with the response
+            }
+            catch (HttpRequestException e)
+            {
+                RoomMessage = $"Error creating rooms: {e.Message}";
+            }
+        }
+        #endregion
 
         public MainWindow()
         {
             InitializeComponent();
             this.DataContext = this;
-            FirstLoad();
+            CreateRoomsFromApi();
+            ConnectToSignalR();
+            //FirstLoad();
         }
 
         void FirstLoad()
@@ -123,18 +181,7 @@ namespace Caro_Online
             }
             currentTurn = EStatus.X;
             UpdateStatus();
-            ConnectToSignalR();
             isGameReset = true; // Set flag to true on reset
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var data = (sender as Button).DataContext as OptionDetail;
-            var position = Maps.IndexOf(data);
-            Task.Run(async() =>
-            {
-                await connection.SendAsync("Click", position);
-            });
         }
 
         void MakeAMove(OptionDetail data)
@@ -580,12 +627,12 @@ namespace Caro_Online
         }
         #endregion
 
-        void AnnounceWinner()
+        async void AnnounceWinner()
         {
             _StatusMessage = currentTurn == EStatus.X ? "X" : "O";
             string announce = $"{_StatusMessage} win";
             MessageBox.Show(announce);
-            FirstLoad();
+            await connection.SendAsync("ResetMap", roomId);
         }
 
         void CheckWin(OptionDetail data)
@@ -595,12 +642,29 @@ namespace Caro_Online
             //CheckWin45Diognal(data);
             //CheckWin135Diognal(data);
 
-
             CheckWinHorizontalBothSides(data);
             CheckWinVerticalBothSides(data);
             CheckWin45DiognalBothSides(data);
             CheckWin135DiognalBothSides(data);
         }
+
+        #region event handler
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var data = (sender as Button).DataContext as OptionDetail;
+            var position = Maps.IndexOf(data);
+            Task.Run(async () =>
+            {
+                await connection.SendAsync("Click", roomId, position);
+            });
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            roomId = Int32.Parse(RoomKeyTextBox.Text) ;
+            JoinRoomViaApi();
+        }
+        #endregion
     }
 
     public class OptionDetail : INotifyPropertyChanged

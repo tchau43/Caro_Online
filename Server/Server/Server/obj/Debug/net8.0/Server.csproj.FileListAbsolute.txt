@@ -30,3 +30,4 @@ D:\Code\CompileFile\WPF\Caro_Online\Server\Server\Server\obj\Debug\net8.0\refint
 D:\Code\CompileFile\WPF\Caro_Online\Server\Server\Server\obj\Debug\net8.0\Server.pdb
 D:\Code\CompileFile\WPF\Caro_Online\Server\Server\Server\obj\Debug\net8.0\Server.genruntimeconfig.cache
 D:\Code\CompileFile\WPF\Caro_Online\Server\Server\Server\obj\Debug\net8.0\ref\Server.dll
+D:\Code\CompileFile\WPF\Caro_Online\Server\Server\Server\obj\Debug\net8.0\Server.sourcelink.json

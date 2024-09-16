@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\wpf\\caro_online\\caro_online\\caro_online\\helper\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\helper\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\wpf\\caro_online\\caro_online\\caro_online\\caro_online.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\caro_online.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
@@ -25,11 +29,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MySetting.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Helper\\MySetting.cs",
+              "RelativeDocumentMoniker": "Caro_Online\\Helper\\MySetting.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Helper\\MySetting.cs",
+              "RelativeToolTip": "Caro_Online\\Helper\\MySetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T06:18:10.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Caro_Online",
               "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
               "RelativeDocumentMoniker": "Caro_Online\\Caro_Online.csproj",
@@ -41,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "D:\\Code\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -49,8 +66,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAKgUAAAAAAAAAAAvwNgUAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-09-14T04:10:53.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-14T04:10:53.556Z"
             },
             {
               "$type": "Document",
@@ -72,7 +88,7 @@
               "RelativeDocumentMoniker": "Caro_Online\\MainWindow.xaml.cs",
               "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\MainWindow.xaml.cs",
               "RelativeToolTip": "Caro_Online\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAswIQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAALYAAAAAAAAAAAAQwK0CAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T03:24:07.324Z",
               "EditorCaption": ""

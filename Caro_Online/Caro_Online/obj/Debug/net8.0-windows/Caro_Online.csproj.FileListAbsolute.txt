@@ -35,3 +35,4 @@ D:\Code\CompileFile\WPF\Caro_Online\Caro_Online\Caro_Online\bin\Debug\net8.0-win
 D:\Code\CompileFile\WPF\Caro_Online\Caro_Online\Caro_Online\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
 D:\Code\CompileFile\WPF\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Caro_Online.csproj.AssemblyReference.cache
 D:\Code\CompileFile\WPF\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Caro_Onl.08316125.Up2Date
+D:\Code\CompileFile\WPF\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Caro_Online.sourcelink.json

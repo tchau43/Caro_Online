@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.SignalR;
+using Server.Controllers;
+using Server.ViewModels;
 
 namespace Server
 {
@@ -6,43 +8,86 @@ namespace Server
     {
         private static int maxParticipants = 2;
         private static List<string> participants = new List<string>();
-        private static EStatus currentTurn = EStatus.X;
+        //private static bool resetMap = false;
 
-        public async Task JoinChat()
+        //public async Task JoinChat()
+        //{
+        //    if (participants.Count < maxParticipants)
+        //    {
+        //        participants.Add(Context.ConnectionId);
+        //        await Groups.AddToGroupAsync(Context.ConnectionId, "ChatRoom");
+        //        await Clients.Client(Context.ConnectionId).SendAsync("ReceiveConnectionId", Context.ConnectionId);  // Send the ConnectionId to the client
+        //        await Clients.Groups("ChatRoom").SendAsync("UserJoined", Context.ConnectionId);
+        //        await Clients.Client(Context.ConnectionId).SendAsync("NotiStatus", participants.Count == 1 ? EStatus.X : EStatus.O);
+        //    }
+        //    else
+        //    {
+        //        await Clients.Client(Context.ConnectionId).SendAsync("RoomFull", "Room is already full");
+        //    }
+        //}
+
+        public async Task ReceiveConnectionId()
         {
-            if (participants.Count < maxParticipants)
-            {
-                participants.Add(Context.ConnectionId);
-                await Groups.AddToGroupAsync(Context.ConnectionId, "ChatRoom");
-                await Clients.Groups("ChatRoom").SendAsync("UserJoined", Context.ConnectionId);
-                await Clients.Client(Context.ConnectionId).SendAsync("NotiStatus", participants.Count == 1 ? EStatus.X : EStatus.O);
-            }
-            else
-            {
-                await Clients.Client(Context.ConnectionId).SendAsync("RoomFull", "Room is already full");
-            }
+            await Clients.Client(Context.ConnectionId).SendAsync("ReceiveConnectionId", Context.ConnectionId);  // Send the ConnectionId to the client
         }
 
-        public async Task Click(int pos)
+        //public async Task ResetMap()
+        //{
+        //    resetMap = true;
+        //    //return;
+        //}
+
+        public async Task ResetMap(int roomId)
         {
-            if (participants.Count < maxParticipants)
+            if (!RoomManager.Rooms.ContainsKey(roomId))
+            {
+                await Clients.Client(Context.ConnectionId).SendAsync("RoomError", "Room does not exist.");
+                return;
+            }
+
+            var room = RoomManager.Rooms[roomId];
+            room.currentTurn = EStatus.X;  // Reset the current turn to X
+
+            await Clients.Group($"Room-{roomId}").SendAsync("ResetGame", "The game has been reset. It's X's turn.");
+            await Clients.Group($"Room-{roomId}").SendAsync("ChangeTurn", (int)room.currentTurn);
+        }
+
+
+        public async Task Click(int roomId, int pos)
+        {
+            if (!RoomManager.Rooms.ContainsKey(roomId))
+            {
+                await Clients.Client(Context.ConnectionId).SendAsync("RoomError", "Room does not exist.");
+                return;
+            }
+            var room = RoomManager.Rooms[roomId];
+
+            if (room.Participants.Count < maxParticipants)
             {
                 await Clients.Client(Context.ConnectionId).SendAsync("RoomFull", "Room is not ready");
                 return;
             }
 
-            if ((currentTurn == EStatus.X && participants.IndexOf(Context.ConnectionId) == 0) || (currentTurn == EStatus.O && participants.IndexOf(Context.ConnectionId) == 1))
+            if ((room.currentTurn == EStatus.X && room.Participants.IndexOf(Context.ConnectionId) == 0) || (room.currentTurn == EStatus.O && room.Participants.IndexOf(Context.ConnectionId) == 1))
             {
-                await Clients.All.SendAsync("MoveToPosition", pos, currentTurn);
-                currentTurn = currentTurn == EStatus.X ? EStatus.O : EStatus.X;
-                await Clients.All.SendAsync("ChangeTurn", (int)currentTurn);
+                await Clients.Group($"Room-{roomId}").SendAsync("MoveToPosition", pos, room.currentTurn);
+                room.currentTurn = room.currentTurn == EStatus.X ? EStatus.O : EStatus.X;
+                await Clients.Group($"Room-{roomId}").SendAsync("ChangeTurn", (int)room.currentTurn);
+                //await Clients.Group($"Room-{roomId}").SendAsync("CheckWin", "");
             }
         }
 
-        //public async Task ChangeTurn()
-        //{
-
-        //}
+        public async Task ChangeTurn(int roomId)
+        {
+            if (RoomManager.Rooms.ContainsKey(roomId))
+            {
+                await Clients.Client(Context.ConnectionId).SendAsync("RoomError", "Room does not exist.");
+                return;
+            }
+            var room = RoomManager.Rooms[roomId];
+            room.currentTurn = room.currentTurn == EStatus.X ? EStatus.O : EStatus.X;
+            await Clients.Group($"Room-{roomId}").SendAsync("ChangeTurn", (int)room.currentTurn);
+        }
 
         public async override Task OnDisconnectedAsync(Exception exception)
         {

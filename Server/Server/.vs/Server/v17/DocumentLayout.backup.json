@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\viewmodels\\roomsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\viewmodels\\roomsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\helper\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\helper\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,31 +30,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Server",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Server.csproj",
-              "RelativeDocumentMoniker": "Server\\Server.csproj",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Server.csproj",
-              "RelativeToolTip": "Server\\Server.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-14T03:55:52.321Z",
+              "DocumentIndex": 4,
+              "Title": "MySetting.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Helper\\MySetting.cs",
+              "RelativeDocumentMoniker": "Server\\Helper\\MySetting.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Helper\\MySetting.cs",
+              "RelativeToolTip": "Server\\Helper\\MySetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T05:23:41.736Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Program.cs",
-              "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Program.cs",
-              "RelativeToolTip": "Server\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "RoomsVM.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\ViewModels\\RoomsVM.cs",
+              "RelativeDocumentMoniker": "Server\\ViewModels\\RoomsVM.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\ViewModels\\RoomsVM.cs",
+              "RelativeToolTip": "Server\\ViewModels\\RoomsVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T06:22:55.925Z",
+              "WhenOpened": "2024-09-15T16:24:59.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\RoomsController.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "Server\\Controllers\\RoomsController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowEcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T05:38:12.665Z",
               "EditorCaption": ""
             },
             {
@@ -61,22 +79,23 @@
               "RelativeDocumentMoniker": "Server\\ChatHub.cs",
               "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\ChatHub.cs",
               "RelativeToolTip": "Server\\ChatHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwGoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T06:21:56.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Server.http",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Server.http",
-              "RelativeDocumentMoniker": "Server\\Server.http",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Server.http",
-              "RelativeToolTip": "Server\\Server.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-09-13T06:21:37.569Z"
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Program.cs*",
+              "RelativeToolTip": "Server\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:22:55.925Z",
+              "EditorCaption": ""
             }
           ]
         }

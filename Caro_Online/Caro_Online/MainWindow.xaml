@@ -30,11 +30,23 @@
         </ItemsControl>
 
         <Grid Grid.Column="1">
-            <StackPanel>
-                <TextBlock Text="{Binding NotiStatusMessage}"></TextBlock>
-                <TextBlock Text="{Binding StatusMessage}"></TextBlock>
-                <TextBlock Text="{Binding RoomMessage}"></TextBlock>
-            </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300px"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel>
+                    <TextBlock Text="{Binding NotiStatusMessage}"></TextBlock>
+                    <TextBlock Text="{Binding StatusMessage}"></TextBlock>
+                    <TextBlock Text="{Binding RoomMessage}"></TextBlock>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel>
+                    <TextBox x:Name="RoomKeyTextBox" Margin="5px"></TextBox>
+                    <Button Height="30px" Width="100px" HorizontalAlignment="Left" Content="join" Click="Button_Click_1"></Button>
+                </StackPanel>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
