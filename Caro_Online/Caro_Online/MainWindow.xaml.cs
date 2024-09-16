@@ -89,10 +89,11 @@ namespace Caro_Online
                 RoomMessage = "Participant: " + connectionId;
             });
 
-            //connection.On<string>("CheckWin", (x) =>
-            //{
-                
-            //});
+            connection.On<int, EStatus>("CheckWin", (pos, checkTurn) =>
+            {
+                CheckWin(pos, checkTurn);
+                currentTurn = checkTurn;
+            });
 
             connection.On<EStatus>("NotiStatus", (message) =>
             {
@@ -189,7 +190,6 @@ namespace Caro_Online
             if (data.Status == EStatus.none)
             {
                 data.Status = currentTurn;
-                CheckWin(data);
             }
         }
 
@@ -199,192 +199,192 @@ namespace Caro_Online
         }
 
         #region check win algorithm
-        void CheckWinHorizontal(OptionDetail data)
-        {
-            var currentIndex = Maps.IndexOf(data);
-            var checkIndex = currentIndex;
-            int cnt = 1;
+        //void CheckWinHorizontal(OptionDetail data)
+        //{
+        //    var currentIndex = Maps.IndexOf(data);
+        //    var checkIndex = currentIndex;
+        //    int cnt = 1;
 
-            while (true)
-            {
-                checkIndex--;
-                if (checkIndex % (int)Math.Sqrt(Maps.Count()) == (int)Math.Sqrt(Maps.Count()) - 1)
-                {
-                    break;
-                }
-                else
-                {
-                    if (Maps[checkIndex].Status == data.Status)
-                    {
-                        cnt++;
-                    }
-                    else { break; }
-                }
-            }
-            checkIndex = currentIndex;
-            while (true)
-            {
-                checkIndex++;
-                if (checkIndex % (Math.Sqrt(Maps.Count())) == 0)
-                {
-                    break;
-                }
-                else
-                {
-                    if (Maps[checkIndex].Status == data.Status)
-                    {
-                        cnt++;
-                    }
-                    else { break; }
-                }
-            }
-            if (cnt >= 5)
-            {
-                AnnounceWinner();
-            }
-        }
+        //    while (true)
+        //    {
+        //        checkIndex--;
+        //        if (checkIndex % (int)Math.Sqrt(Maps.Count()) == (int)Math.Sqrt(Maps.Count()) - 1)
+        //        {
+        //            break;
+        //        }
+        //        else
+        //        {
+        //            if (Maps[checkIndex].Status == data.Status)
+        //            {
+        //                cnt++;
+        //            }
+        //            else { break; }
+        //        }
+        //    }
+        //    checkIndex = currentIndex;
+        //    while (true)
+        //    {
+        //        checkIndex++;
+        //        if (checkIndex % (Math.Sqrt(Maps.Count())) == 0)
+        //        {
+        //            break;
+        //        }
+        //        else
+        //        {
+        //            if (Maps[checkIndex].Status == data.Status)
+        //            {
+        //                cnt++;
+        //            }
+        //            else { break; }
+        //        }
+        //    }
+        //    if (cnt >= 5)
+        //    {
+        //        AnnounceWinner();
+        //    }
+        //}
 
-        void CheckWinVertical(OptionDetail data)
-        {
-            var currentIndex = Maps.IndexOf(data);
-            var checkIndex = currentIndex;
-            int cnt = 1;
+        //void CheckWinVertical(OptionDetail data)
+        //{
+        //    var currentIndex = Maps.IndexOf(data);
+        //    var checkIndex = currentIndex;
+        //    int cnt = 1;
 
-            while (true)
-            {
-                checkIndex -= (int)Math.Sqrt(Maps.Count());
-                if (checkIndex < 0)
-                {
-                    break;
-                }
-                else
-                {
-                    if (Maps[checkIndex].Status == data.Status)
-                    {
-                        cnt++;
-                    }
-                    else { break; }
-                }
-            }
-            checkIndex = currentIndex;
-            while (true)
-            {
-                checkIndex += (int)Math.Sqrt(Maps.Count());
-                if (checkIndex >= Maps.Count())
-                {
-                    break;
-                }
-                else
-                {
-                    if (Maps[checkIndex].Status == data.Status)
-                    {
-                        cnt++;
-                    }
-                    else { break; }
-                }
-            }
-            if (cnt >= 5)
-            {
-                AnnounceWinner();
-            }
-        }
+        //    while (true)
+        //    {
+        //        checkIndex -= (int)Math.Sqrt(Maps.Count());
+        //        if (checkIndex < 0)
+        //        {
+        //            break;
+        //        }
+        //        else
+        //        {
+        //            if (Maps[checkIndex].Status == data.Status)
+        //            {
+        //                cnt++;
+        //            }
+        //            else { break; }
+        //        }
+        //    }
+        //    checkIndex = currentIndex;
+        //    while (true)
+        //    {
+        //        checkIndex += (int)Math.Sqrt(Maps.Count());
+        //        if (checkIndex >= Maps.Count())
+        //        {
+        //            break;
+        //        }
+        //        else
+        //        {
+        //            if (Maps[checkIndex].Status == data.Status)
+        //            {
+        //                cnt++;
+        //            }
+        //            else { break; }
+        //        }
+        //    }
+        //    if (cnt >= 5)
+        //    {
+        //        AnnounceWinner();
+        //    }
+        //}
 
-        void CheckWin45Diognal(OptionDetail data)
-        {
-            var currentIndex = Maps.IndexOf(data);
-            var checkIndex = currentIndex;
-            int cnt = 1;
-            while (true)
-            {
-                checkIndex -= ((int)Math.Sqrt(Maps.Count()) - 1);
-                if (checkIndex < 0 || checkIndex % ((int)Math.Sqrt(Maps.Count())) == 0)
-                {
-                    break;
-                }
-                else
-                {
-                    if (Maps[checkIndex].Status == data.Status)
-                    {
-                        cnt++;
-                    }
-                    else { break; }
-                }
-            }
-            checkIndex = currentIndex;
-            while (true)
-            {
-                checkIndex += ((int)Math.Sqrt(Maps.Count()) - 1);
-                if (checkIndex > Maps.Count() || checkIndex % ((int)Math.Sqrt(Maps.Count())) == ((int)Math.Sqrt(Maps.Count())) - 1)
-                // 
-                {
-                    break;
-                }
-                else
-                {
-                    if (Maps[checkIndex].Status == data.Status)
-                    {
-                        cnt++;
-                    }
-                    else { break; }
-                }
-            }
+        //void CheckWin45Diognal(OptionDetail data)
+        //{
+        //    var currentIndex = Maps.IndexOf(data);
+        //    var checkIndex = currentIndex;
+        //    int cnt = 1;
+        //    while (true)
+        //    {
+        //        checkIndex -= ((int)Math.Sqrt(Maps.Count()) - 1);
+        //        if (checkIndex < 0 || checkIndex % ((int)Math.Sqrt(Maps.Count())) == 0)
+        //        {
+        //            break;
+        //        }
+        //        else
+        //        {
+        //            if (Maps[checkIndex].Status == data.Status)
+        //            {
+        //                cnt++;
+        //            }
+        //            else { break; }
+        //        }
+        //    }
+        //    checkIndex = currentIndex;
+        //    while (true)
+        //    {
+        //        checkIndex += ((int)Math.Sqrt(Maps.Count()) - 1);
+        //        if (checkIndex > Maps.Count() || checkIndex % ((int)Math.Sqrt(Maps.Count())) == ((int)Math.Sqrt(Maps.Count())) - 1)
+        //        // 
+        //        {
+        //            break;
+        //        }
+        //        else
+        //        {
+        //            if (Maps[checkIndex].Status == data.Status)
+        //            {
+        //                cnt++;
+        //            }
+        //            else { break; }
+        //        }
+        //    }
 
-            if (cnt >= 5) { AnnounceWinner(); }
-        }
+        //    if (cnt >= 5) { AnnounceWinner(); }
+        //}
 
-        void CheckWin135Diognal(OptionDetail data)
-        {
-            var currentIndex = Maps.IndexOf(data);
-            var checkIndex = currentIndex;
-            int cnt = 1;
-            while (true)
-            {
-                checkIndex -= ((int)Math.Sqrt(Maps.Count()) + 1);
-                if (checkIndex < 0 || checkIndex % ((int)Math.Sqrt(Maps.Count())) == ((int)Math.Sqrt(Maps.Count())) - 1)
-                {
-                    break;
-                }
-                else
-                {
-                    if (Maps[checkIndex].Status == data.Status)
-                    {
-                        cnt++;
-                    }
-                    else { break; }
-                }
-            }
-            checkIndex = currentIndex;
-            while (true)
-            {
-                checkIndex += ((int)Math.Sqrt(Maps.Count()) + 1);
-                if (checkIndex > Maps.Count() || checkIndex % ((int)Math.Sqrt(Maps.Count())) == 0)
-                // 
-                {
-                    break;
-                }
-                else
-                {
-                    if (Maps[checkIndex].Status == data.Status)
-                    {
-                        cnt++;
-                    }
-                    else { break; }
-                }
-            }
+        //void CheckWin135Diognal(OptionDetail data)
+        //{
+        //    var currentIndex = Maps.IndexOf(data);
+        //    var checkIndex = currentIndex;
+        //    int cnt = 1;
+        //    while (true)
+        //    {
+        //        checkIndex -= ((int)Math.Sqrt(Maps.Count()) + 1);
+        //        if (checkIndex < 0 || checkIndex % ((int)Math.Sqrt(Maps.Count())) == ((int)Math.Sqrt(Maps.Count())) - 1)
+        //        {
+        //            break;
+        //        }
+        //        else
+        //        {
+        //            if (Maps[checkIndex].Status == data.Status)
+        //            {
+        //                cnt++;
+        //            }
+        //            else { break; }
+        //        }
+        //    }
+        //    checkIndex = currentIndex;
+        //    while (true)
+        //    {
+        //        checkIndex += ((int)Math.Sqrt(Maps.Count()) + 1);
+        //        if (checkIndex > Maps.Count() || checkIndex % ((int)Math.Sqrt(Maps.Count())) == 0)
+        //        // 
+        //        {
+        //            break;
+        //        }
+        //        else
+        //        {
+        //            if (Maps[checkIndex].Status == data.Status)
+        //            {
+        //                cnt++;
+        //            }
+        //            else { break; }
+        //        }
+        //    }
 
-            if (cnt >= 5) { AnnounceWinner(); }
-        }
+        //    if (cnt >= 5) { AnnounceWinner(); }
+        //}
         #endregion
 
         #region check win block both sides algorithm
 
-        void CheckWinHorizontalBothSides(OptionDetail data)
+        void CheckWinHorizontalBothSides(int pos, EStatus checkTurn)
         {
-            var currentIndex = Maps.IndexOf(data); // Current position in the 1D array
+            var currentIndex = pos; // Current position in the 1D array
             var checkIndex = currentIndex;
             int size = (int)Math.Sqrt(Maps.Count); // Grid size (number of columns)
             var currentRow = currentIndex / size;
-            var checkStatus = data.Status == EStatus.X ? EStatus.O : EStatus.X;
+            var checkStatus = checkTurn == EStatus.X ? EStatus.O : EStatus.X;
             var cnt = 1;
 
             while (true)
@@ -408,7 +408,7 @@ namespace Caro_Online
                             return;
                         }
                     }
-                    else if (Maps[checkIndex].Status == data.Status)
+                    else if (Maps[checkIndex].Status == checkTurn)
                     {
                         cnt++;
                     }
@@ -425,7 +425,7 @@ namespace Caro_Online
                 }
                 else
                 {
-                    if (Maps[checkIndex].Status == data.Status)
+                    if (Maps[checkIndex].Status == checkTurn)
                     {
                         cnt++;
                     }
@@ -434,17 +434,17 @@ namespace Caro_Online
             }
             if (cnt >= 5)
             {
-                AnnounceWinner();
+                AnnounceWinner(checkTurn);
             }
         }
 
-        void CheckWinVerticalBothSides(OptionDetail data)
+        void CheckWinVerticalBothSides(int pos, EStatus checkTurn)
         {
-            var currentIndex = Maps.IndexOf(data); // Current position in the 1D array
+            var currentIndex = pos; // Current position in the 1D array
             var checkIndex = currentIndex;
             int size = (int)Math.Sqrt(Maps.Count); // Grid size (number of columns)
             var currentRow = currentIndex / size;
-            var checkStatus = data.Status == EStatus.X ? EStatus.O : EStatus.X;
+            var checkStatus = checkTurn == EStatus.X ? EStatus.O : EStatus.X;
             var cnt = 1;
 
             while (true)
@@ -468,7 +468,7 @@ namespace Caro_Online
                             return;
                         }
                     }
-                    else if (Maps[checkIndex].Status == data.Status)
+                    else if (Maps[checkIndex].Status == checkTurn)
                     {
                         cnt++;
                     }
@@ -485,7 +485,7 @@ namespace Caro_Online
                 }
                 else
                 {
-                    if (Maps[checkIndex].Status == data.Status)
+                    if (Maps[checkIndex].Status == checkTurn)
                     {
                         cnt++;
                     }
@@ -494,17 +494,17 @@ namespace Caro_Online
             }
             if (cnt >= 5)
             {
-                AnnounceWinner();
+                AnnounceWinner(checkTurn);
             }
         }
 
-        void CheckWin45DiognalBothSides(OptionDetail data)
+        void CheckWin45DiognalBothSides(int pos, EStatus checkTurn)
         {
-            var currentIndex = Maps.IndexOf(data); // Current position in the 1D array
+            var currentIndex = pos; // Current position in the 1D array
             var checkIndex = currentIndex;
             int size = (int)Math.Sqrt(Maps.Count); // Grid size (number of columns)
             var currentRow = currentIndex / size;
-            var checkStatus = data.Status == EStatus.X ? EStatus.O : EStatus.X;
+            var checkStatus = checkTurn == EStatus.X ? EStatus.O : EStatus.X;
             var cnt = 1;
             var checkRow = currentRow;
 
@@ -530,7 +530,7 @@ namespace Caro_Online
                             return;
                         }
                     }
-                    else if (Maps[checkIndex].Status == data.Status)
+                    else if (Maps[checkIndex].Status == checkTurn)
                     {
                         cnt++;
                     }
@@ -549,7 +549,7 @@ namespace Caro_Online
                 }
                 else
                 {
-                    if (Maps[checkIndex].Status == data.Status)
+                    if (Maps[checkIndex].Status == checkTurn)
                     {
                         cnt++;
                     }
@@ -558,17 +558,17 @@ namespace Caro_Online
             }
             if (cnt >= 5)
             {
-                AnnounceWinner();
+                AnnounceWinner(checkTurn);
             }
         }
 
-        void CheckWin135DiognalBothSides(OptionDetail data)
+        void CheckWin135DiognalBothSides(int pos, EStatus checkTurn)
         {
-            var currentIndex = Maps.IndexOf(data); // Current position in the 1D array
+            var currentIndex = pos; // Current position in the 1D array
             var checkIndex = currentIndex;
             int size = (int)Math.Sqrt(Maps.Count); // Grid size (number of columns)
             var currentRow = currentIndex / size;
-            var checkStatus = data.Status == EStatus.X ? EStatus.O : EStatus.X;
+            var checkStatus = checkTurn == EStatus.X ? EStatus.O : EStatus.X;
             var cnt = 1;
             var checkRow = currentRow;
 
@@ -594,7 +594,7 @@ namespace Caro_Online
                             return;
                         }
                     }
-                    else if (Maps[checkIndex].Status == data.Status)
+                    else if (Maps[checkIndex].Status == checkTurn)
                     {
                         cnt++;
                     }
@@ -613,7 +613,7 @@ namespace Caro_Online
                 }
                 else
                 {
-                    if (Maps[checkIndex].Status == data.Status)
+                    if (Maps[checkIndex].Status == checkTurn)
                     {
                         cnt++;
                     }
@@ -622,30 +622,30 @@ namespace Caro_Online
             }
             if (cnt >= 5)
             {
-                AnnounceWinner();
+                AnnounceWinner(checkTurn);
             }
         }
         #endregion
 
-        async void AnnounceWinner()
+        async void AnnounceWinner(EStatus checkTurn)
         {
-            _StatusMessage = currentTurn == EStatus.X ? "X" : "O";
+            _StatusMessage = checkTurn == EStatus.X ? "X" : "O";
             string announce = $"{_StatusMessage} win";
             MessageBox.Show(announce);
             await connection.SendAsync("ResetMap", roomId);
         }
 
-        void CheckWin(OptionDetail data)
+        void CheckWin(int pos, EStatus checkTurn)
         {
             //CheckWinHorizontal(data);
             //CheckWinVertical(data);
             //CheckWin45Diognal(data);
             //CheckWin135Diognal(data);
 
-            CheckWinHorizontalBothSides(data);
-            CheckWinVerticalBothSides(data);
-            CheckWin45DiognalBothSides(data);
-            CheckWin135DiognalBothSides(data);
+            CheckWinHorizontalBothSides(pos, checkTurn);
+            CheckWinVerticalBothSides(pos, checkTurn);
+            CheckWin45DiognalBothSides(pos, checkTurn);
+            CheckWin135DiognalBothSides(pos, checkTurn);
         }
 
         #region event handler

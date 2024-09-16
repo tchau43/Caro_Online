@@ -70,10 +70,11 @@ namespace Server
 
             if ((room.currentTurn == EStatus.X && room.Participants.IndexOf(Context.ConnectionId) == 0) || (room.currentTurn == EStatus.O && room.Participants.IndexOf(Context.ConnectionId) == 1))
             {
+                var checkTurn = room.currentTurn;
                 await Clients.Group($"Room-{roomId}").SendAsync("MoveToPosition", pos, room.currentTurn);
                 room.currentTurn = room.currentTurn == EStatus.X ? EStatus.O : EStatus.X;
                 await Clients.Group($"Room-{roomId}").SendAsync("ChangeTurn", (int)room.currentTurn);
-                //await Clients.Group($"Room-{roomId}").SendAsync("CheckWin", "");
+                await Clients.Group($"Room-{roomId}").SendAsync("CheckWin", pos, checkTurn);  // Pass the position for win checking
             }
         }
 

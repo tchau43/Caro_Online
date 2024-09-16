@@ -42,8 +42,7 @@
               "RelativeToolTip": "Server\\Helper\\MySetting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T05:23:41.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T05:23:41.736Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "Server\\ViewModels\\RoomsVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T16:24:59.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T16:24:59.081Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "Server\\Controllers\\RoomsController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAowEcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T05:38:12.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T05:38:12.665Z"
             },
             {
               "$type": "Document",
@@ -79,7 +76,7 @@
               "RelativeDocumentMoniker": "Server\\ChatHub.cs",
               "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\ChatHub.cs",
               "RelativeToolTip": "Server\\ChatHub.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAcwGoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAswDsAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T06:21:56.165Z",
               "EditorCaption": ""
@@ -90,12 +87,11 @@
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Program.cs",
               "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Program.cs*",
-              "RelativeToolTip": "Server\\Program.cs*",
+              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T06:22:55.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T06:22:55.925Z"
             }
           ]
         }
