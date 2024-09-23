@@ -1,25 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\",
+  "WorkspaceRootPath": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\wpf\\caro_online\\caro_online\\caro_online\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\caro_online\\caro_online\\caro_online\\chinesechessplayscene.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\chinesechessplayscene.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\wpf\\caro_online\\caro_online\\caro_online\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\caro_online\\caro_online\\caro_online\\mainscene.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\mainscene.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\wpf\\caro_online\\caro_online\\caro_online\\helper\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\caro_online\\caro_online\\caro_online\\mainscene.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\mainscene.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\caro_online\\caro_online\\caro_online\\caroplayscene.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\caroplayscene.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\caro_online\\caro_online\\caro_online\\caroplayscene.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\caroplayscene.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\caro_online\\caro_online\\caro_online\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\caro_online\\caro_online\\caro_online\\helper\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\helper\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|d:\\code\\compilefile\\wpf\\caro_online\\caro_online\\caro_online\\caro_online.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{994AF416-59BC-49A3-9ABD-19432C87BFA1}|Caro_Online\\Caro_Online.csproj|solutionrelative:caro_online\\caro_online.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Code\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\royal\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,63 +41,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MySetting.cs",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Helper\\MySetting.cs",
-              "RelativeDocumentMoniker": "Caro_Online\\Helper\\MySetting.cs",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Helper\\MySetting.cs",
-              "RelativeToolTip": "Caro_Online\\Helper\\MySetting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T06:18:10.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Caro_Online",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
-              "RelativeDocumentMoniker": "Caro_Online\\Caro_Online.csproj",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
-              "RelativeToolTip": "Caro_Online\\Caro_Online.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-14T09:35:44.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "D:\\Code\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "D:\\Code\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\VisualStudio\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAKgUAAAAAAAAAAAvwNgUAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-09-14T04:10:53.556Z"
+              "DocumentIndex": 0,
+              "Title": "ChineseChessPlayScene.xaml",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\ChineseChessPlayScene.xaml",
+              "RelativeDocumentMoniker": "Caro_Online\\ChineseChessPlayScene.xaml",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\ChineseChessPlayScene.xaml",
+              "RelativeToolTip": "Caro_Online\\ChineseChessPlayScene.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-23T02:44:02.373Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Caro_Online\\MainWindow.xaml",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\MainWindow.xaml",
-              "RelativeToolTip": "Caro_Online\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-09T01:54:32.52Z"
+              "Title": "MainScene.xaml.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\MainScene.xaml.cs",
+              "RelativeDocumentMoniker": "Caro_Online\\MainScene.xaml.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\MainScene.xaml.cs",
+              "RelativeToolTip": "Caro_Online\\MainScene.xaml.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAnwCgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T02:18:53.66Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Caro_Online\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Caro_Online\\MainWindow.xaml.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAA9wMIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "MainScene.xaml",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\MainScene.xaml",
+              "RelativeDocumentMoniker": "Caro_Online\\MainScene.xaml",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\MainScene.xaml",
+              "RelativeToolTip": "Caro_Online\\MainScene.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-23T02:16:33.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\App.xaml",
+              "RelativeDocumentMoniker": "Caro_Online\\App.xaml",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\App.xaml",
+              "RelativeToolTip": "Caro_Online\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-23T02:14:39.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ResourcePart.cs",
+              "DocumentMoniker": "C:\\Users\\royal\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
+              "ToolTip": "C:\\Users\\royal\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs [Read Only]",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T02:12:14.597Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CaroPlayScene.xaml",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\CaroPlayScene.xaml",
+              "RelativeDocumentMoniker": "Caro_Online\\CaroPlayScene.xaml",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\CaroPlayScene.xaml",
+              "RelativeToolTip": "Caro_Online\\CaroPlayScene.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-23T02:08:08.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MySetting.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\Helper\\MySetting.cs",
+              "RelativeDocumentMoniker": "Caro_Online\\Helper\\MySetting.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\Helper\\MySetting.cs",
+              "RelativeToolTip": "Caro_Online\\Helper\\MySetting.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T06:18:10.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CaroPlayScene.xaml.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\CaroPlayScene.xaml.cs",
+              "RelativeDocumentMoniker": "Caro_Online\\CaroPlayScene.xaml.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\CaroPlayScene.xaml.cs",
+              "RelativeToolTip": "Caro_Online\\CaroPlayScene.xaml.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwKsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T03:24:07.324Z",
               "EditorCaption": ""

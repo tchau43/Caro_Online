@@ -760,11 +760,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
+      "projectUniqueName": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
       "projectName": "Caro_Online",
-      "projectPath": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
+      "projectPath": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
       "packagesPath": "C:\\Users\\royal\\.nuget\\packages\\",
-      "outputPath": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\obj\\",
+      "outputPath": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -827,7 +827,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

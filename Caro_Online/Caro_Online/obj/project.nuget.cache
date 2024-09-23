@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HEUMfgul/JM=",
+  "dgSpecHash": "MAKL9tBmv8Pki8JaYnHzu13JOrvNRUIIYv4ZIEgZaYrbG9Hr2kmCvq17p8o6uyrfM8mH3AIYKV/f2X9y/TmPig==",
   "success": true,
-  "projectFilePath": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
+  "projectFilePath": "D:\\Code\\CompileFile\\Caro_Online\\Caro_Online\\Caro_Online\\Caro_Online.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\royal\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\8.0.8\\microsoft.aspnetcore.connections.abstractions.8.0.8.nupkg.sha512",
     "C:\\Users\\royal\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\8.0.8\\microsoft.aspnetcore.http.connections.client.8.0.8.nupkg.sha512",

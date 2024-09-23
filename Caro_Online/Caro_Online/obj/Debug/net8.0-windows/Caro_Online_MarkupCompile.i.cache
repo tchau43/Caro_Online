@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Code\CompileFile\WPF\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\
+D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\
 Caro_Online
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Code\CompileFile\WPF\Caro_Online\Caro_Online\Caro_Online\App.xaml
-11407045341
+D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\App.xaml
+3-1801280092
 
-7-584599643
-21337202090
-MainWindow.xaml;
+92125260438
+2131508605670
+CaroPlayScene.xaml;ChineseChessPlayScene.xaml;MainScene.xaml;
 
-False
+True
 

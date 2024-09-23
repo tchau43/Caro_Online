@@ -13,7 +13,7 @@ namespace Caro_Online
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window, INotifyPropertyChanged
+    public partial class CaroPlayScene : Window, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -164,7 +164,7 @@ namespace Caro_Online
         }
         #endregion
 
-        public MainWindow()
+        public CaroPlayScene()
         {
             InitializeComponent();
             this.DataContext = this;
