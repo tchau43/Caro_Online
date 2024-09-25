@@ -61,7 +61,7 @@ namespace Caro_Online {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Caro_Online;V1.0.0.0;component/caroplayscene.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Caro_Online;component/caroplayscene.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CaroPlayScene.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

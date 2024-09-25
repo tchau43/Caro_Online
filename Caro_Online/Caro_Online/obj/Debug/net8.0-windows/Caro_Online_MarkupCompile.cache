@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\App.xaml
-2-1655098800
+3-1003243572
 
-6-1547410012
+81335920213
 2131508605670
-CaroPlayScene.xaml;MainScene.xaml;
+Scene\CaroPlayScene.xaml;Scene\ChineseChessPlayScene.xaml;Scene\MainScene.xaml;
 
 False
 

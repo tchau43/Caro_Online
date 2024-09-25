@@ -53,7 +53,7 @@ namespace Caro_Online {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Caro_Online;V1.0.0.0;component/mainscene.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Caro_Online;component/mainscene.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MainScene.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

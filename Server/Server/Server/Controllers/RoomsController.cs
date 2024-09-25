@@ -37,12 +37,14 @@ namespace Server.Controllers
             }
         }
 
+
         //[HttpGet]
         //public IActionResult GetRooms()
         //{
         //    var roomNames = rooms.Keys.Select(r => $"Room-{r}").ToList();
         //    return Ok(roomNames);  // Returns the list of room names like Room-1, Room-2, etc.
         //}
+
 
         // POST: api/Rooms/join/1
         [HttpPost("join/{roomId}")]

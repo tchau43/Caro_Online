@@ -72,7 +72,9 @@ D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows
 D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Caro_Online.pdb
 D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Caro_Online.genruntimeconfig.cache
 D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\ref\Caro_Online.dll
-D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\CaroPlayScene.g.cs
-D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\CaroPlayScene.baml
-D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\MainScene.g.cs
-D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\MainScene.baml
+D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Scene\ChineseChessPlayScene.g.cs
+D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Scene\ChineseChessPlayScene.baml
+D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Scene\CaroPlayScene.g.cs
+D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Scene\MainScene.g.cs
+D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Scene\CaroPlayScene.baml
+D:\Code\CompileFile\Caro_Online\Caro_Online\Caro_Online\obj\Debug\net8.0-windows\Scene\MainScene.baml

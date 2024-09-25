@@ -7,21 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="ChineseChessPlayScene.xaml.cs">
+    <Compile Update="Scene\ChineseChessPlayScene.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MainScene.xaml.cs">
+    <Compile Update="Scene\MainScene.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="CaroPlayScene.xaml">
+    <Page Update="Scene\CaroPlayScene.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ChineseChessPlayScene.xaml">
+    <Page Update="Scene\ChineseChessPlayScene.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainScene.xaml">
+    <Page Update="Scene\MainScene.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
