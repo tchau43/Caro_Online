@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\",
+  "WorkspaceRootPath": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\caro_online\\server\\server\\server\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\viewmodels\\roomsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\caro_online\\server\\server\\server\\viewmodels\\roomsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\viewmodels\\roomsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\wpf\\caro_online\\server\\server\\server\\helper\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\caro_online\\server\\server\\server\\helper\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\helper\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\caro_online\\server\\server\\server\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|d:\\code\\compilefile\\caro_online\\server\\server\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC673926-18DF-4359-813C-785CD3E7EDD8}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,64 +30,64 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "MySetting.cs",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Helper\\MySetting.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\Server\\Helper\\MySetting.cs",
               "RelativeDocumentMoniker": "Server\\Helper\\MySetting.cs",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Helper\\MySetting.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\Server\\Helper\\MySetting.cs",
               "RelativeToolTip": "Server\\Helper\\MySetting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-16T05:23:41.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "RoomsVM.cs",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\ViewModels\\RoomsVM.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\Server\\ViewModels\\RoomsVM.cs",
               "RelativeDocumentMoniker": "Server\\ViewModels\\RoomsVM.cs",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\ViewModels\\RoomsVM.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\Server\\ViewModels\\RoomsVM.cs",
               "RelativeToolTip": "Server\\ViewModels\\RoomsVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-15T16:24:59.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoomsController.cs",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Controllers\\RoomsController.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\RoomsController.cs",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Controllers\\RoomsController.cs",
-              "RelativeToolTip": "Server\\Controllers\\RoomsController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowEcAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T05:38:12.665Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChatHub.cs",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\ChatHub.cs",
-              "RelativeDocumentMoniker": "Server\\ChatHub.cs",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\ChatHub.cs",
-              "RelativeToolTip": "Server\\ChatHub.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAswDkAAAA3AAAAAAAAAA==",
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\Server\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\RoomsController.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\Server\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "Server\\Controllers\\RoomsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T06:21:56.165Z",
+              "WhenOpened": "2024-09-15T05:38:12.665Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\Server\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Server\\ChatHub.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\Server\\ChatHub.cs",
+              "RelativeToolTip": "Server\\ChatHub.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T06:21:56.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Program.cs",
+              "DocumentMoniker": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\Server\\Program.cs",
               "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "D:\\Code\\CompileFile\\WPF\\Caro_Online\\Server\\Server\\Server\\Program.cs",
+              "ToolTip": "D:\\Code\\CompileFile\\Caro_Online\\Server\\Server\\Server\\Program.cs",
               "RelativeToolTip": "Server\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
